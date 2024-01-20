@@ -1,0 +1,6 @@
+
+NGINX come LoadBalancer:
+
+Distribuisce traffico: NGINX riceve richieste e le distribuisce tra più server.
+Bilancia carico: Equilibra carico tra server per prevenire sovraccarichi.
+Aumenta disponibilità: Se un server fallisce, NGINX reindirizza traffico ad altri.
