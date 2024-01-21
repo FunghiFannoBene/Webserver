@@ -1,0 +1,7 @@
+Dati Trasmessi su Connessioni SSL/TLS (HTTPS): Tutti i dati trasmessi tra il client (ad esempio, un browser web) e il server su una 
+connessione protetta da SSL/TLS (HTTPS) sono criptati. Questo include pagine web, informazioni di login, 
+dati dei moduli, API calls, ecc. La crittografia impedisce a chiunque di intercettare e leggere questi dati mentre sono in transito.
+
+Dati Trasmessi su Connessioni non SSL/TLS (HTTP): I dati trasmessi senza SSL/TLS (cioè su connessioni HTTP standard) non sono criptati. 
+Questo significa che chiunque sia in grado di intercettare il traffico di rete (come su una rete Wi-Fi pubblica non protetta) può potenzialmente 
+vedere o modificare il contenuto di questi dati.
