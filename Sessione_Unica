@@ -1,0 +1,5 @@
+Chiavi di Sessione in SSL/TLS:
+
+Durante l'inizio di una connessione SSL/TLS, il client e il server negoziano una chiave di sessione.
+Questa chiave di sessione è utilizzata per crittografare e decrittografare i dati trasmessi durante quella specifica sessione.
+Ogni sessione ha la sua chiave di sessione unica, garantendo che la comunicazione sia sicura e privata.
