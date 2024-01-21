@@ -1,2 +1,15 @@
 utilizza un certificato SSL/TLS 
 insieme a Diffie-Hellman (DH) o Ephemeral Diffie-Hellman (ECDH) per abilitare la crittografia Perfect Forward Secrecy (PFS).
+Per implementare PFS, è possibile utilizzare diversi algoritmi di scambio di chiavi, tra cui:
+
+Diffie-Hellman (DH): Questo è uno degli algoritmi tradizionali utilizzati per
+il calcolo del segreto condiviso tra le parti. Può essere utilizzato per ottenere PFS.
+
+Ephemeral Diffie-Hellman (ECDH): Questo è una variante del Diffie-Hellman che utilizza curve ellittiche.
+Anche questa è una scelta valida per ottenere PFS.
+
+Elliptic Curve Diffie-Hellman (ECDHE): Questo è spesso utilizzato in combinazione con protocolli 
+come TLS/SSL per ottenere PFS. ECDHE utilizza curve ellittiche per lo scambio di chiavi.
+
+RSA: Anche RSA può essere utilizzato per ottenere PFS, ma è importante utilizzare chiavi RSA effimere, 
+il che significa che vengono generate nuove chiavi RSA per ogni sessione.
