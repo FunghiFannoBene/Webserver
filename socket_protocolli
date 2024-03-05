@@ -1,0 +1,10 @@
+TCP (Transmission Control Protocol) garantisce la consegna affidabile dei dati, stabilendo una connessione, 
+assicurando l'ordine dei pacchetti e la riconsegna in caso di perdita.
+
+UDP (User Datagram Protocol) è un protocollo senza connessione, più veloce ma meno affidabile, senza garanzia di consegna, ordine dei pacchetti o riconsegna.
+
+ICMP (Internet Control Message Protocol) per messaggi di controllo e di errore.
+IP (Internet Protocol) per l'indirizzamento e il routing dei pacchetti.
+HTTP/HTTPS per il trasferimento di documenti web.
+FTP (File Transfer Protocol) per il trasferimento di file.
+SMTP (Simple Mail Transfer Protocol) per l'invio di email.
