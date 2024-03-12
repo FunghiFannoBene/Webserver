@@ -1,0 +1,15 @@
+	int socketServ = socket(AF_INET, SOCK_STREAM, 0);
+  
+  int socketServ = socket(AF_INET, SOCK_STREAM, 0);
+
+  serverAddress.sin_family = AF_INET;
+	serverAddress.sin_addr.s_addr = htonl(2130706433);
+  // servaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
+	serverAddress.sin_port = htons(atoi(argv[1]));
+
+  // binda l'indirizzo
+  if (bind(servfd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0)
+    err(NULL);
+
+htons() (Host TO Network Short) viene usata per la porta perché le porte sono valori short (16 bit).
+htonl() (Host TO Network Long) viene usata per l'indirizzo IP perché gli indirizzi IP sono valori long (32 bit).
