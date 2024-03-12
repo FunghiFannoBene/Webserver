@@ -1,0 +1,12 @@
+La funzione select() monitora multiple file descriptors (sockets, file, ecc.) per vedere se sono "pronti" per alcune operazioni
+(lettura, scrittura, o presenza di eccezioni). Un file descriptor è considerato "pronto" se:
+
+Per la lettura: ci sono dati disponibili per essere letti, oppure una connessione è stata chiusa, o una richiesta di connessione è in attesa su una socket passiva.
+Per la scrittura: lo spazio nel buffer di scrittura è disponibile, quindi non bloccherebbe l'operazione di scrittura.
+Per le eccezioni: si verifica una condizione eccezionale (ad esempio, una connessione TCP ha ricevuto un flag di urgente).
+select() usa set di bit (bitmask) per rappresentare i file descriptors in tre categorie: lettura, scrittura, ed eccezioni. 
+L'applicazione inizializza questi set con i file descriptors che vuole monitorare e poi chiama select(). Alla sua ritorno, 
+select() modifica questi set per riflettere quali file descriptors sono effettivamente "pronti".
+
+select() fa questo controllo senza bloccare il programma in attesa che i file descriptors diventino pronti, permettendo 
+di gestire multiple connessioni in modo efficiente in un singolo thread o processo.
